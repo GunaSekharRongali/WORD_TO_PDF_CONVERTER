@@ -10,7 +10,8 @@ body{
   /* Style for the heading */
 h1{
     align-self: center;
-    font-size: xx-large;
+    font-size: x-large;
+    color: rgb(62, 58, 58);
 }
   
   /* Style for the file input */
@@ -26,10 +27,10 @@ h1{
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -52,9 +53,9 @@ h1{
   /* Style for the convert button */
 #convertButton{
     margin: 10px;
-    width: 300px;
-    height: 70px;
-    background-color: rgb(198, 36, 36);
+    width: 280px;
+    height: 60px;
+    background-color: rgb(251, 10, 10);
     color: white;
     align-self: center;
     border: none;
@@ -62,10 +63,105 @@ h1{
     font-size: x-large;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
   
   /* Style when the convert button is hovered */
 #convertButton:hover{
-    background-color: rgb(175, 18, 18);
+    background-color: rgb(218, 23, 23);
+    transform: translateY(-2px);
 }
+
+/* Style when the convert button is active */
+#convertButton:active{
+    background-color: rgb(199, 27, 27);
+    transform: translateY(0px);
+}
+
+
+/* Small devices (tablets) */
+@media (min-width: 576px) {
+  /* Styles for tablets */
+  Style for the body
+  body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      background-color: whitesmoke;
+  }
+  
+    /* Style for the heading */
+  h1{
+      align-self: center;
+      font-size: xx-large;
+  }
+    
+    /* Style for the file input */
+  .file-input {
+      position: absolute;
+      left: -9999px; /* Hide the input off the screen */
+  }
+  
+    /* Style for the custom button */
+  .custom-file-upload {
+      display: inline-block;
+      align-self: center;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      border: none;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+    /* Button hover effect */
+  .custom-file-upload:hover {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+  }
+  
+    /* Button active (click) effect */
+  .custom-file-upload:active {
+      background-color: #003f7f;
+      transform: translateY(0px);
+  }
+  
+  
+    /* Style for the convert button */
+  #convertButton{
+      margin: 10px;
+      width: 300px;
+      height: 70px;
+      background-color: rgb(251, 10, 10);
+      color: white;
+      align-self: center;
+      border: none;
+      border-radius: 12px;
+      font-size: x-large;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style when the convert button is hovered */
+  #convertButton:hover{
+    background-color: rgb(218, 23, 23);
+    transform: translateY(-2px);
+}
+
+  /* Style when the convert button is active */
+  #convertButton:active{
+    background-color: rgb(199, 27, 27);
+    transform: translateY(0px);
+  }
+
+}
+
+
